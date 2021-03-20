@@ -75,17 +75,19 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="LINE公式アカウント作成" duration="0">
+      <google-codelab-step label="LINE公式アカウント作成" duration="5">
         <p>LINEボットの設定を行います。構成図だとここです。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\beba01cc253dc78.png"></p>
 <h2 is-upgraded>LINE Developersへのアカウント登録</h2>
 <p>LINEボットを作成するためには、LINE Developersへの登録が必要となります。</p>
-<p>LINE Developersコンソールで[コンソール]もしくは[ログイン]をクリックします。</p>
+<p><a href="https://developers.line.biz/console" target="_blank">LINE Developersコンソール</a>で[コンソール]もしくは[ログイン]をクリックします。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\63ea7920211ab285.png"></p>
 <p>認証画面で[LINEアカウントでログイン]をクリック</p>
 <p class="image-container"><img style="width: 426.50px" src="img\46f104ee37c4fb96.png"></p>
 <p>LINEアカウントのメールアドレスとパスワードを入力し、ログインしてください。</p>
 <p class="image-container"><img style="width: 434.51px" src="img\d382ec907522161a.png"></p>
+<aside class="special"><p>スマホのLINEアプリがある方はLINEQRコードログインした方が簡単です</p>
+</aside>
 <p>以下のような二要素認証のための4桁の数字が表示されるため</p>
 <p class="image-container"><img style="width: 298.30px" src="img\cae4bd7a71f0b68f.png"></p>
 <p>LINEアプリで4桁を入力してください。</p>
@@ -100,7 +102,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="新規プロバイダー作成" duration="0">
+      <google-codelab-step label="新規プロバイダー作成" duration="5">
         <p>LINEボットを開発するために開発者の所属となるプロバイダーを作成します。[新規プロバイダー]ボタンをクリック</p>
 <p class="image-container"><img style="width: 517.50px" src="img\9672c9867e164871.png"></p>
 <aside class="special"><p>すでにプロバイダーを作成済の方は新規作成は不要です。</p>
@@ -113,7 +115,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="チャネル（LINEボットアプリ）作成" duration="0">
+      <google-codelab-step label="チャネル（LINEボットアプリ）作成" duration="5">
         <p>LINEボットアカウントを作成します。以下の画面で[Messaging API]をクリックします。</p>
 <p class="image-container"><img style="width: 508.50px" src="img\4afc1fda94dcc476.png"></p>
 <p>チャネル作成画面で、必要項目を埋めて[作成]ボタンをクリックします。</p>
@@ -167,7 +169,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="ボットアカウント設定" duration="0">
+      <google-codelab-step label="ボットアカウント設定" duration="10">
         <h2 is-upgraded>リッチメニュー設定</h2>
 <p>LINEのリッチメニューを設定します。[LINE official Account manager]をクリックします。</p>
 <p class="image-container"><img style="width: 413.68px" src="img\1994599eae38b487.png"></p>
@@ -211,7 +213,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="LINE Messaging API設定" duration="0">
+      <google-codelab-step label="LINE Messaging API設定" duration="5">
         <p>APIの設定を行うため、別タブで操作していた<a href="https://developers.line.biz/console/" target="_blank">LINE Developer コンソール</a>の画面に戻ります。チャネル基本設定タブのチャネルIDとチャネルシークレットをメモしておきます。</p>
 <p>チャネルIDは以下。</p>
 <p class="image-container"><img style="width: 327.50px" src="img\e5fb7f2280814b92.png"></p>
@@ -228,7 +230,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="ボットアカウントと友達になる" duration="0">
+      <google-codelab-step label="ボットアカウントと友達になる" duration="5">
         <p>ここをつなげます。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\c386ff6128294606.png"></p>
 <p>LINEのQRコードでボットと友達になります。</p>
@@ -242,7 +244,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="AWS IAMロール作成" duration="0">
+      <google-codelab-step label="AWS IAMロール作成" duration="10">
         <p>AWSマネジメントコンソールにログインし、東京リージョンに変更します。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\55eba4370863452.png"></p>
 <p>Lambda用のロールを作成します。IAMサービス画面でロールメニューをクリックします。</p>
@@ -276,7 +278,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Amazon S3バケットを作成する" duration="0">
+      <google-codelab-step label="Amazon S3バケットを作成する" duration="10">
         <p>LINEボットから送信される音声を保存するS3バケットとAmazon Transcribeの結果を保存するS3バケットを作成します。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\3fd17c5fecc5930.png"></p>
 <p>AWSマネジメントコンソールでAmazon S3にアクセスし、[バケットを作成する]をクリックしてください。</p>
@@ -307,7 +309,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="AWS Lambdaの関数を作成する" duration="0">
+      <google-codelab-step label="AWS Lambdaの関数を作成する" duration="20">
         <h2 is-upgraded>LINEボット用のLambda関数作成</h2>
 <p class="image-container"><img style="width: 601.70px" src="img\d78b557a73ee946f.png"></p>
 <p>サービス名検索バーでlambdaを検索し、Lambdaサービス画面で[関数の作成]をクリックします。</p>
@@ -511,7 +513,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="LINE Webhook設定" duration="0">
+      <google-codelab-step label="LINE Webhook設定" duration="5">
         <p>LINEからメッセージ投稿されたらAPI Gatewayで作ったURIがPOSTされるようにLINE DeveloperのWebhookの設定を行います。</p>
 <p class="image-container"><img style="width: 601.70px" src="img\37cc23ca3155aa39.png"></p>
 <p><a href="https://developers.line.biz/console" target="_blank">LINE Developersコンソール</a>のボットチャンネルMessagins API設定タブの中にある</p>
@@ -534,7 +536,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="LINEボットで動作確認" duration="0">
+      <google-codelab-step label="LINEボットで動作確認" duration="10">
         <p>ボットの動作確認をしましょう。</p>
 <p>まず、英語のメッセージを送ってみます。<a href="https://aws.amazon.com/blogs/aws/author/jbarr/" target="_blank">AWSエバンジェリストJeff Barr</a>のブログなどからコピーペーストして英語の文章を送信して日本語訳のメッセージが返ってくるかを試してください。</p>
 <p class="image-container"><img style="width: 246.50px" src="img\7a55bf01370feb2d.png"></p>
@@ -546,7 +548,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="うまく動かない時の確認事項" duration="0">
+      <google-codelab-step label="うまく動かない時の確認事項" duration="5">
         <p>動作確認でうまくいかない場合、以下の内容を確認してみてください。</p>
 <ul>
 <li>メモしていた各種キーに誤りはないか</li>
@@ -561,7 +563,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="[時間があったら]CloudWatchでログを確認する" duration="0">
+      <google-codelab-step label="[時間があったら]CloudWatchでログを確認する" duration="10">
         <p>うまく動作しない場合やハンズオンの時間があまったらCloudWatchでどういうログがどこに出力されるのかを確認しましょう。</p>
 <h2 is-upgraded>Lambdaのログ</h2>
 <p class="image-container"><img style="width: 601.70px" src="img\acab28636ecab842.png"></p>
@@ -585,7 +587,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="後始末" duration="0">
+      <google-codelab-step label="後始末" duration="10">
         <p>使われ続けないかぎりは課金が発生するものではないですが、課金が発生しないようリソースの削除を行いましょう。今日は残しておき、復習してからでも構いません。</p>
 <h2 is-upgraded>Lambda関数削除</h2>
 <p>１つずつLambda関数を選択して削除します。</p>
@@ -629,7 +631,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="最後に" duration="0">
+      <google-codelab-step label="最後に" duration="5">
         <p>まとめ</p>
 <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
 <ul class="checklist">
